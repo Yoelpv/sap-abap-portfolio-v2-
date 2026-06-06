@@ -1,0 +1,14 @@
+# PDFs generados automáticamente
+*.pdf
+
+# Archivos de memoria y configuración local
+memory/
+.claude/settings.local.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+GUION_ENTREVISTA.md
