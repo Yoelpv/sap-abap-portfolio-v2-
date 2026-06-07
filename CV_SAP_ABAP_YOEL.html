@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>CV — Yoel Palacios — SAP ABAP Developer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Calibri', Arial, sans-serif;
+    font-size: 11px;
+    color: #1a1a1a;
+    background: white;
+    padding: 20px 28px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* CABECERA */
+  .header { border-bottom: 2.5px solid #0070d2; padding-bottom: 10px; margin-bottom: 12px; }
+  .header h1 { font-size: 22px; color: #0070d2; font-weight: 700; letter-spacing: 0.5px; }
+  .header .subtitulo { font-size: 12px; color: #444; margin-top: 2px; font-weight: 600; }
+  .contacto { display: flex; gap: 18px; margin-top: 6px; flex-wrap: wrap; }
+  .contacto span { font-size: 10.5px; color: #333; }
+  .contacto a { color: #0070d2; text-decoration: none; }
+
+  /* SECCIONES */
+  .seccion { margin-bottom: 11px; }
+  .seccion-titulo {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: white;
+    background: #0070d2;
+    padding: 2px 8px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  /* PERFIL */
+  .perfil p { font-size: 11px; line-height: 1.5; color: #222; }
+
+  /* SKILLS */
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px 20px; }
+  .skill-item { font-size: 10.5px; padding: 1px 0; }
+  .skill-item::before { content: "▸ "; color: #0070d2; font-size: 9px; }
+
+  /* FORMACION SAP */
+  .formacion-sap { display: flex; justify-content: space-between; align-items: baseline; }
+  .formacion-sap .nombre { font-weight: 700; font-size: 11px; }
+  .formacion-sap .fecha { font-size: 10px; color: #666; }
+  .formacion-sap .empresa { font-size: 10.5px; color: #444; }
+
+  /* EXPERIENCIA */
+  .exp-item { margin-bottom: 8px; }
+  .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .exp-puesto { font-weight: 700; font-size: 11px; }
+  .exp-fecha { font-size: 10px; color: #666; white-space: nowrap; }
+  .exp-empresa { font-size: 10.5px; color: #0070d2; margin-bottom: 2px; }
+  .exp-bullets { padding-left: 0; list-style: none; }
+  .exp-bullets li { font-size: 10.5px; color: #333; padding: 1px 0; }
+  .exp-bullets li::before { content: "· "; color: #0070d2; }
+
+  /* ACADEMICO */
+  .acad-item { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+  .acad-titulo { font-weight: 700; font-size: 11px; }
+  .acad-fecha { font-size: 10px; color: #666; }
+  .acad-uni { font-size: 10.5px; color: #444; }
+
+  /* FOOTER */
+  .footer-row { display: flex; gap: 24px; }
+  .footer-item { font-size: 10.5px; }
+  .footer-item strong { color: #0070d2; }
+
+  .tag {
+    display: inline-block;
+    background: #e8f4fd;
+    color: #0070d2;
+    border: 1px solid #b3d7f5;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 10px;
+    margin: 1px 2px;
+    font-weight: 600;
+  }
+
+  @media print {
+    body { padding: 14px 20px; }
+    @page { margin: 0; size: A4; }
+  }
+</style>
+</head>
+<body>
+
+<!-- CABECERA -->
+<div class="header">
+  <h1>YOEL PALACIOS</h1>
+  <div class="subtitulo">Desarrollador SAP ABAP &nbsp;|&nbsp; Ingeniero Industrial</div>
+  <div class="contacto">
+    <span>📞 612 490 451</span>
+    <span>✉ yoelpalaciosv@gmail.com</span>
+    <span>🔗 <a href="https://linkedin.com/in/yoel-palacios-abap">linkedin.com/in/yoel-palacios-abap</a></span>
+    <span>💻 <a href="https://github.com/Yoelpv/sap-abap-portfolio-v2-">GitHub — Portafolio ABAP</a></span>
+    <span>📍 Disponible — 100% remoto</span>
+  </div>
+</div>
+
+
+<!-- PERFIL -->
+<div class="seccion perfil">
+  <div class="seccion-titulo">Perfil</div>
+  <p>
+    Ingeniero Industrial especializado en desarrollo SAP ABAP. Combino la comprensión de procesos
+    industriales (PP · PM · MM) con capacidad técnica de implementación en SAP ECC / S/4HANA On-Premise.
+    Formación completa TAW10 · TAW11 · TAW12 — 540 horas certificadas — con prácticas reales en empresa SAP.
+    Portafolio público en GitHub con código propio y mejoras documentadas.
+  </p>
+</div>
+
+
+<!-- FORMACIÓN SAP — va primero -->
+<div class="seccion">
+  <div class="seccion-titulo">Formación SAP</div>
+
+  <div style="margin-bottom:5px;">
+    <div class="formacion-sap">
+      <span class="nombre">Consultor Desarrollo de Aplicaciones con ABAP</span>
+      <span class="fecha">Nov 2024 – Feb 2025</span>
+    </div>
+    <div class="formacion-sap">
+      <span class="empresa">Experis Academy ManpowerGroup · 270h · Plan de Impulso Talento Digital, Comunidad de Madrid · APTO</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:5px;">
+    <div class="formacion-sap">
+      <span class="nombre">Desarrollador SAP ABAP — TAW10 · TAW11e · TAW12</span>
+      <span class="fecha">Feb 2023 – May 2023</span>
+    </div>
+    <div class="formacion-sap">
+      <span class="empresa">CEIF Getafe — Centro de Formación Profesional TIC · 270h · Fondo Social Europeo · APTO</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- COMPETENCIAS TÉCNICAS -->
+<div class="seccion">
+  <div class="seccion-titulo">Competencias técnicas SAP</div>
+  <div class="skills-grid">
+    <div class="skill-item">Reportes ABAP · SELECTION-SCREEN · Open SQL</div>
+    <div class="skill-item">Enhancements · BAdI · Enhancement Spots (SE18/SE19)</div>
+    <div class="skill-item">ALV con CL_SALV_TABLE y REUSE_ALV_GRID_DISPLAY</div>
+    <div class="skill-item">OData clásico · SAP Gateway · SEGW (MPC/DPC)</div>
+    <div class="skill-item">Módulos de función · BAPIRET2 · RFC</div>
+    <div class="skill-item">Programación orientada a objetos ABAP · Herencia · Interfaces</div>
+    <div class="skill-item">Modularización · INCLUDEs · FORM/ENDFORM</div>
+    <div class="skill-item">Eclipse ADT · SAP GUI · Diccionario de datos (SE11)</div>
+  </div>
+</div>
+
+
+<!-- EXPERIENCIA -->
+<div class="seccion">
+  <div class="seccion-titulo">Experiencia profesional</div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-puesto">Desarrollador SAP ABAP — Prácticas</span>
+      <span class="exp-fecha">Feb 2023 – Jun 2023</span>
+    </div>
+    <div class="exp-empresa">SAPTOOLS Consulting SL — Las Rozas, Madrid</div>
+    <ul class="exp-bullets">
+      <li>Prácticas formativas en empresa consultora SAP — 120 horas certificadas</li>
+      <li>Desarrollo de programas ABAP sobre sistema real en entorno S/4HANA</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-puesto">Consultor de Indicadores de Gestión</span>
+      <span class="exp-fecha">May 2018 – Feb 2019</span>
+    </div>
+    <div class="exp-empresa">Banesco Banco Universal — Venezuela</div>
+    <ul class="exp-bullets">
+      <li>Automatización de reportes de gestión en Hyperion y Google Sites</li>
+      <li>Análisis de procesos y estudios de tiempos para optimización de flujos de trabajo</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-puesto">Ingeniero Industrial — Prácticas</span>
+      <span class="exp-fecha">Ene 2017 – May 2017</span>
+    </div>
+    <div class="exp-empresa">PDVSA — Venezuela</div>
+    <ul class="exp-bullets">
+      <li>Plan de mantenimiento para equipos de climatización industrial</li>
+      <li>Coordinación de seguridad eléctrica y gestión de riesgos en planta</li>
+    </ul>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-header">
+      <span class="exp-puesto">Técnico de Almacén e Inventario</span>
+      <span class="exp-fecha">Mar 2011 – Mar 2014</span>
+    </div>
+    <div class="exp-empresa">CANTV — Venezuela</div>
+    <ul class="exp-bullets">
+      <li>Control y serializado de equipos de computación y telefonía</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- FORMACIÓN ACADÉMICA -->
+<div class="seccion">
+  <div class="seccion-titulo">Formación académica</div>
+  <div class="acad-item">
+    <div>
+      <div class="acad-titulo">Ingeniería Industrial</div>
+      <div class="acad-uni">Universidad Nacional Experimental Politécnica 'Antonio José de Sucre' — Venezuela</div>
+    </div>
+    <div class="acad-fecha">2017</div>
+  </div>
+</div>
+
+
+<!-- DATOS ADICIONALES -->
+<div class="seccion">
+  <div class="seccion-titulo">Otros</div>
+  <div class="footer-row">
+    <div class="footer-item"><strong>Idiomas:</strong> Español (nativo) · Inglés A2</div>
+    <div class="footer-item"><strong>Carnet:</strong> Tipo B</div>
+    <div class="footer-item"><strong>Incorporación:</strong> Inmediata</div>
+    <div class="footer-item"><strong>Modalidad:</strong> Remoto preferible</div>
+  </div>
+</div>
+
+</body>
+</html>
