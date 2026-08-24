@@ -1,0 +1,48 @@
+/*───────────────────────────────────────────────────────────────────────────────
+  ZI_Equipment — BEHAVIOR DEFINITION (managed).
+
+  Declara QUÉ se puede hacer con el equipo y con qué reglas. "managed" = el framework
+  RAP se encarga de la persistencia (INSERT/UPDATE/DELETE contra ZEQUIPMENT); yo solo
+  declaro el comportamiento. Sin lógica extra no hace falta programar nada más.
+
+  Puntos que un junior debe saber defender:
+   · lock master         → el bloqueo se gestiona en la raíz.
+   · etag master LocalLastChangedAt → bloqueo OPTIMISTA: si dos usuarios editan a la vez,
+     el segundo recibe un error de ETag en lugar de pisar el cambio del primero.
+   · field ( readonly ) EquipmentId → la clave no se edita una vez creada.
+   · field ( mandatory ) → campos obligatorios en el create.
+   · mapping for zequipment → enlaza el nombre CDS (EquipmentId) con el campo BD (equipment_id).
+───────────────────────────────────────────────────────────────────────────────*/
+managed implementation in class zbp_i_equipment unique;
+strict ( 2 );
+
+define behavior for ZI_Equipment alias Equipment
+persistent table zequipment
+lock master
+authorization master ( instance )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete;
+
+  field ( mandatory : create ) EquipmentId;   // clave de negocio: obligatoria al crear, inmutable después
+  field ( mandatory ) Description, Plant;
+
+  // RAP rellena y protege estos campos (no los edita el usuario)
+  field ( readonly ) CreatedBy, CreatedAt, LastChangedBy, LastChangedAt, LocalLastChangedAt;
+
+  mapping for zequipment
+  {
+    EquipmentId        = equipment_id;
+    Description        = description;
+    EquipmentType      = equipment_type;
+    Plant              = plant;
+    Status             = status;
+    CreatedBy          = created_by;
+    CreatedAt          = created_at;
+    LastChangedBy      = last_changed_by;
+    LastChangedAt      = last_changed_at;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

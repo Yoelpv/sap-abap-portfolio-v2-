@@ -1,0 +1,12 @@
+/*───────────────────────────────────────────────────────────────────────────────
+  ZUI_EQUIPMENT_O2 — SERVICE DEFINITION.
+
+  Declara qué entidades se publican como servicio. Sobre esta service definition se
+  crea el SERVICE BINDING (en ADT), que genera el servicio OData V4 que consume Fiori
+  Elements. Un service definition puede exponer varias entidades; aquí solo la raíz.
+───────────────────────────────────────────────────────────────────────────────*/
+@EndUserText.label: 'Servicio OData — Equipos de mantenimiento'
+define service ZUI_EQUIPMENT_O2
+{
+  expose ZC_Equipment as Equipment;
+}

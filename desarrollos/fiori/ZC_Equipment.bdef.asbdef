@@ -1,0 +1,16 @@
+/*───────────────────────────────────────────────────────────────────────────────
+  ZC_Equipment — BEHAVIOR de PROYECCIÓN.
+
+  La proyección "hereda" el comportamiento de la interfaz vía "use". Aquí decido QUÉ
+  operaciones de las declaradas en el behavior base expongo a la app Fiori. Como es un
+  CRUD completo, expongo create/update/delete.
+───────────────────────────────────────────────────────────────────────────────*/
+projection;
+strict ( 2 );
+
+define behavior for ZC_Equipment alias Equipment
+{
+  use create;
+  use update;
+  use delete;
+}

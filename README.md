@@ -19,6 +19,7 @@ Construidos a partir del código real del curso — cada ejercicio muestra el an
 | 4 | [Módulo de función](desarrollos/formacion/04_modulo_funcion/ZFM_MATERIAL_GET_LIST.abap) | Function Group · BAPIRET2 | Patrón de error estándar SAP, parámetros opcionales |
 | 5 | [Clase OOP + Factory](desarrollos/formacion/05_clase_oo/ZCL_MATERIAL_MANAGER.abap) | ABAP OO | Abstracta · Herencia · Polimorfismo · Patrón Factory |
 | 6 | [OData clásico SAP Gateway](desarrollos/formacion/06_odata_clasico/ZCL_YPALACIOS_DPC_EXT.abap) | SAP Gateway · MPC/DPC · SEGW | GET_ENTITY + CREATE_ENTITY, COMMIT WORK, HTTP 404 |
+| 7 | [ALV SFLIGHT con eventos](desarrollos/formacion/07_alv_sflight_eventos/) | CL_SALV_TABLE · Eventos · Semáforo | Doble clic, hotspot, semáforo de ocupación (criticality) |
 
 ---
 
@@ -35,9 +36,8 @@ Construidos a partir del código real del curso — cada ejercicio muestra el an
 
 | Ejercicio | Módulo | Tecnología |
 |-----------|--------|------------|
-| [Fiori RAP — Equipos PM](desarrollos/fiori/) | PM | RAP Managed · Fiori Elements · OData V4 |
-| [Fiori RAP — Reclamaciones SD](desarrollos/sd_claims/) | SD | RAP · Determinations · Actions · DCL · ETag |
-| [CDS Views — Analítica SD](desarrollos/ZI_SalesSummaryByOrg.cds) | SD | CDS Views · JOIN · Agregaciones |
+| [Fiori RAP — Equipos PM](desarrollos/fiori/) | PM | RAP Managed · Fiori Elements · OData V4 · ETag |
+| [CDS Views — Analítica SD](desarrollos/ZI_SalesSummaryByOrg.cds) | SD | CDS Views · JOIN · Agregaciones · @Semantics |
 
 ---
 
