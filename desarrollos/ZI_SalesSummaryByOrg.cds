@@ -1,3 +1,8 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   GENERADO con herramienta propia de generación y verificación de artefactos RAP/CDS
+   (proyecto personal). Es una MUESTRA DE LA SALIDA del generador — no picado a mano.
+   Lo relevante es el diseño del sistema que lo produce limpio. Ver README de la carpeta.
+   ───────────────────────────────────────────────────────────────────────────── */
 /*───────────────────────────────────────────────────────────────────────────────
   ZI_SalesSummaryByOrg — Vista CDS analítica: resumen de ventas por organización.
 

@@ -1,8 +1,14 @@
 # Fiori RAP — Gestión de Equipos de Mantenimiento (PM)
 
-Business Object **RAP managed** completo: una app Fiori Elements de CRUD sobre equipos de
-mantenimiento, construida siguiendo el patrón estándar de S/4HANA. Ejercicio de formación
-en BTP / S/4HANA Cloud (Eclipse ADT).
+> ⚙ **Generado con una herramienta propia** de generación y verificación RAP (proyecto personal).
+> Estas piezas son una **muestra de la salida** del generador — **NO están picadas a mano**. Lo
+> valioso aquí no es teclear cada línea, sino el diseño del sistema que las produce limpias y
+> consistentes. (Los ejercicios ABAP clásicos del portafolio —reports, ALV, BAPIs, BAdIs— esos **sí**
+> están escritos a mano.)
+
+Business Object **RAP managed** completo (interfaz CDS + behavior managed + proyección @UI +
+service definition): una app Fiori Elements de CRUD sobre equipos de mantenimiento, según el
+patrón estándar de S/4HANA.
 
 ## Las capas del BO (de datos a UI)
 

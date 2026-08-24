@@ -32,12 +32,17 @@ Construidos a partir del código real del curso — cada ejercicio muestra el an
 
 ---
 
-## Ejercicios avanzados (BTP Cloud / RAP)
+## Salida de mi herramienta propia de generación RAP (proyecto personal)
 
-| Ejercicio | Módulo | Tecnología |
-|-----------|--------|------------|
+> ⚙ **Estas piezas están GENERADAS con una herramienta propia** de generación y verificación
+> RAP/CDS (proyecto personal) — **no picadas a mano**. Las incluyo como muestra de la calidad del
+> RAP que produce el generador. **Todo lo de arriba** (formación TAW y ejercicios on-premise) **sí
+> está escrito a mano por mí.**
+
+| Ejercicio (generado) | Módulo | Tecnología |
+|----------------------|--------|------------|
 | [Fiori RAP — Equipos PM](desarrollos/fiori/) | PM | RAP Managed · Fiori Elements · OData V4 · ETag |
-| [CDS Views — Analítica SD](desarrollos/ZI_SalesSummaryByOrg.cds) | SD | CDS Views · JOIN · Agregaciones · @Semantics |
+| [CDS analítica — Ventas](desarrollos/ZI_SalesSummaryByOrg.cds) | SD | CDS · JOIN · Agregaciones · @Semantics |
 
 ---
 
