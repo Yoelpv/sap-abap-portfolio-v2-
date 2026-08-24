@@ -1,0 +1,175 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'id_Paciente'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'id_Paciente'
+annotate entity ZCDS_ZPACIENTE_ypv
+
+with
+
+{
+
+  @UI.facet: [ {
+
+    label: 'General Information',
+
+    id: 'GeneralInfo',
+
+    purpose: #STANDARD,
+
+    position: 10 ,
+
+    type: #IDENTIFICATION_REFERENCE
+
+  } ]
+
+
+  @UI.lineItem: [ {
+   position: 10
+  } ]
+  @UI.identification: [ {
+  position: 10
+  } ]
+  //  @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 10
+  //} ]
+  nombre_paciente;
+
+
+
+  @UI.lineItem: [ {
+
+   position: 20
+
+  } ]
+  @UI.identification: [ { //CON ESTA ETIQUTA COLOCAMOS CUADROS PARA RELLENAR EN CREATE Y VISUALIZAR DATOS AL PINCHAR ALGUN ITEM
+    position: 20
+  } ]
+  //    @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 20
+
+  //} ]
+  apellido_paciente;
+
+
+
+  @UI.lineItem: [ {
+
+   position: 30
+
+  } ]
+  @UI.identification: [ {
+    position: 30
+  } ]
+  //    @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 30
+  //} ]
+  poblacion;
+
+
+
+  @UI.lineItem: [ {
+
+   position: 40
+
+  } ]
+  @UI.identification: [ {
+    position: 40
+  } ]
+  //    @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 40
+  //} ]
+  provincia;
+
+
+
+  @UI.lineItem: [ {
+
+   position: 50
+
+  } ]
+  @UI.identification: [ {
+    position: 50
+  } ]
+  //    @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 50
+  //} ]
+  telefono;
+
+
+
+  @UI.lineItem: [ {
+
+   position: 60
+
+  } ]
+  @UI.identification: [ {
+    position: 60
+  } ]
+  //    @UI.selectionField: [ {//CON ESTA ETIQUTA COLOCAMOS FILTROS, ESTA APAGADA PORQUE LA MIRO MEJOR SIN FILTROS
+  //    position: 60
+  //} ]
+  email_paciente;
+
+  @UI.lineItem: [ {
+  position: 70
+  } ]
+  @UI.identification: [ {
+    position: 70
+  } ]
+  @UI.selectionField: [ {
+  position: 70
+  } ]
+  id_Centro;
+
+  @UI.lineItem: [ {
+
+  position: 70
+
+  } ]
+  @UI.identification: [ {
+    position: 80
+  } ]
+  @UI.selectionField: [ {
+  position: 80
+  } ]
+  local_last_changed;
+  @UI.lineItem: [ {
+
+  position: 90
+
+  } ]
+  @UI.identification: [ {
+    position: 90
+  } ]
+  @UI.selectionField: [ {
+  position: 90
+  } ]
+  last_changed;
+  @UI.lineItem: [ {
+
+  position: 100
+
+  } ]
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.selectionField: [ {
+  position: 100
+  } ]
+  user_create;
+  @UI.lineItem: [ {
+
+  position: 110
+
+  } ]
+  @UI.identification: [ {
+    position: 110
+  } ]
+  @UI.selectionField: [ {
+  position: 110
+  } ]
+  user_last_change;
+
+
+}

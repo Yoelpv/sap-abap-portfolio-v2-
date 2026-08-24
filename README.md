@@ -32,6 +32,16 @@ Construidos a partir del código real del curso — cada ejercicio muestra el an
 
 ---
 
+## RAP construido a mano (formación · BTP)
+
+> ✍ Escrito a mano por mí en formación (S/4HANA BTP) — **no generado**. Mi ejemplo de RAP hecho con las manos.
+
+| Ejercicio | Módulo | Tecnología |
+|-----------|--------|------------|
+| [BO RAP — Gestión de Pacientes](desarrollos/rap-pacientes-manual/) | Healthcare | RAP Managed · Behavior · Metadata Extension @UI · Service Binding · DDIC completo (`_ypv`) |
+
+---
+
 ## Salida de mi herramienta propia de generación RAP (proyecto personal)
 
 > ⚙ **Estas piezas están GENERADAS con una herramienta propia** de generación y verificación

@@ -1,0 +1,6 @@
+@EndUserText.label: 'service definition del proyecto'
+define service Zcds_zpaciente_ypv
+{
+    expose ZCDS_ZPACIENTE_YPV;
+    
+}
